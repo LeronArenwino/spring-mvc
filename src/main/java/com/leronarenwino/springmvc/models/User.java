@@ -4,9 +4,9 @@ public class User {
 
     private final String name;
     private final String lastname;
-    private final String email;
+    private String email;
 
-    public User(String name, String lastname, String email) {
+    public User(String name, String lastname) {
         this.name = name;
         this.lastname = lastname;
         this.email = email;
@@ -23,4 +23,9 @@ public class User {
     public String getEmail() {
         return email;
     }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
 }

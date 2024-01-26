@@ -7,6 +7,7 @@
 <body>
     <h1 th:text="${user.name}">Details view</h1>
     <h1 th:text="${user.lastname}">Details view</h1>
-    <h1 th:text="${user.email}">Details view</h1>
+    <h1 th:if="${user.email != null}" th:text="${user.email}">Details view</h1>
+    <h1 th:if="${user.email == null}" th:text="${'No tiene email'}">Details view</h1>
 </body>
 </html>
